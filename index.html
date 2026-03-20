@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PhoneZone – Venta de Celulares</title>
+  <link rel="shortcut icon" href="assets/phone.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body>
+ 
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">📱 PhoneZone</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Celulares</a></li>
+          <li class="nav-item"><a class="nav-link" href="/">Accesorios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-light btn-sm"><i class="bi bi-search"></i></button>
+          <button class="btn btn-warning btn-sm">
+            <i class="bi bi-cart3"></i> Carrito
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- HERO -->
+  <section class="bg-dark text-white py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="badge bg-warning text-dark mb-3 fs-6">🔥 Nuevos modelos 2025</span>
+          <h1 class="display-4 fw-bold mb-3">Tu próximo celular<br>está acá</h1>
+          <p class="lead text-secondary mb-4">Los mejores smartphones al mejor precio. Envío gratis a todo el país y hasta 12 cuotas sin interés.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#productos" class="btn btn-warning btn-lg px-4">Ver productos</a>
+            <a href="#" class="btn btn-outline-light btn-lg px-4">Ver ofertas</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="bg-secondary bg-opacity-25 rounded-4 p-5 d-inline-block">
+            <i class="bi bi-phone" style="font-size:8rem; color:#ffc107;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- BENEFICIOS -->
+  <section class="bg-warning py-3">
+    <div class="container">
+      <div class="row text-center g-2">
+        <div class="col-6 col-md-3">
+          <i class="bi bi-truck me-1"></i> <strong>Envío gratis</strong> desde $50.000
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-credit-card me-1"></i> <strong>12 cuotas</strong> sin interés
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-shield-check me-1"></i> <strong>Garantía</strong> oficial
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-arrow-counterclockwise me-1"></i> <strong>Devolución</strong> 30 días
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CATEGORÍAS -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-center">Explorá por marca</h2>
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-md-2">
+          <a href="#" class="btn btn-outline-dark w-100 py-3 rounded-3">
+            <i class="bi bi-apple d-block fs-3 mb-1"></i> Apple
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="#" class="btn btn-outline-dark w-100 py-3 rounded-3">
+            <i class="bi bi-phone d-block fs-3 mb-1"></i> Samsung
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="#" class="btn btn-outline-dark w-100 py-3 rounded-3">
+            <i class="bi bi-phone d-block fs-3 mb-1"></i> Motorola
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="#" class="btn btn-outline-dark w-100 py-3 rounded-3">
+            <i class="bi bi-phone d-block fs-3 mb-1"></i> Xiaomi
+          </a>
+        </div>
+        <div class="col-6 col-md-2">
+          <a href="#" class="btn btn-outline-dark w-100 py-3 rounded-3">
+            <i class="bi bi-grid d-block fs-3 mb-1"></i> Otros
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- PRODUCTOS DESTACADOS -->
+  <section class="py-5" id="productos">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold mb-0">Productos destacados</h2>
+        <a href="#" class="btn btn-outline-dark btn-sm">Ver todos <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="row g-4">
+ 
+        <!-- Card 1 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0 position-relative">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height:180px;">
+              <i class="bi bi-phone" style="font-size:5rem; color:#aaa;"></i>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <p class="text-muted small mb-1">Apple</p>
+              <h5 class="card-title fw-bold">iPhone 15 Pro</h5>
+              <div class="text-warning small mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <span class="text-muted ms-1">(128)</span>
+              </div>
+              <p class="text-muted small">256 GB · Titanio · 5G</p>
+              <div class="mt-auto">
+                <p class="text-muted text-decoration-line-through small mb-0">$1.499.999</p>
+                <p class="fw-bold fs-5 text-danger mb-3">$1.199.999</p>
+                <button class="btn btn-dark w-100"><i class="bi bi-cart-plus me-1"></i>Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Card 2 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm border border-warning position-relative">
+            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-2">Más vendido</span>
+            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height:180px;">
+              <i class="bi bi-phone" style="font-size:5rem; color:#aaa;"></i>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <p class="text-muted small mb-1">Samsung</p>
+              <h5 class="card-title fw-bold">Galaxy S24 Ultra</h5>
+              <div class="text-warning small mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span class="text-muted ms-1">(204)</span>
+              </div>
+              <p class="text-muted small">512 GB · Negro · S Pen</p>
+              <div class="mt-auto">
+                <p class="fw-bold fs-5 mb-3">$1.350.000</p>
+                <button class="btn btn-dark w-100"><i class="bi bi-cart-plus me-1"></i>Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Card 3 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height:180px;">
+              <i class="bi bi-phone" style="font-size:5rem; color:#aaa;"></i>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <p class="text-muted small mb-1">Motorola</p>
+              <h5 class="card-title fw-bold">Edge 50 Pro</h5>
+              <div class="text-warning small mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                <span class="text-muted ms-1">(87)</span>
+              </div>
+              <p class="text-muted small">256 GB · Azul · AMOLED</p>
+              <div class="mt-auto">
+                <p class="fw-bold fs-5 mb-3">$649.999</p>
+                <button class="btn btn-dark w-100"><i class="bi bi-cart-plus me-1"></i>Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Card 4 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm border-0 position-relative">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">Nuevo</span>
+            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height:180px;">
+              <i class="bi bi-phone" style="font-size:5rem; color:#aaa;"></i>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <p class="text-muted small mb-1">Xiaomi</p>
+              <h5 class="card-title fw-bold">14 Ultra</h5>
+              <div class="text-warning small mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <span class="text-muted ms-1">(53)</span>
+              </div>
+              <p class="text-muted small">512 GB · Blanco · Leica</p>
+              <div class="mt-auto">
+                <p class="fw-bold fs-5 mb-3">$1.099.999</p>
+                <button class="btn btn-dark w-100"><i class="bi bi-cart-plus me-1"></i>Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- BANNER OFERTA -->
+  <section class="bg-warning py-5">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-md-8">
+          <h3 class="fw-bold mb-1">🎉 Oferta del mes</h3>
+          <p class="mb-0">Samsung Galaxy A55 a <strong>$499.999</strong> — solo hasta el 31 de marzo. ¡No te lo pierdas!</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <a href="#" class="btn btn-dark btn-lg px-5">Ver oferta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ACCESORIOS -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-center">Accesorios populares</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <div class="card border-0 shadow-sm text-center p-3 h-100">
+            <i class="bi bi-headphones fs-1 text-dark mb-2"></i>
+            <h6 class="fw-bold">Auriculares</h6>
+            <p class="text-muted small mb-0">Desde $29.999</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card border-0 shadow-sm text-center p-3 h-100">
+            <i class="bi bi-battery-charging fs-1 text-dark mb-2"></i>
+            <h6 class="fw-bold">Cargadores</h6>
+            <p class="text-muted small mb-0">Desde $14.999</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card border-0 shadow-sm text-center p-3 h-100">
+            <i class="bi bi-shield fs-1 text-dark mb-2"></i>
+            <h6 class="fw-bold">Fundas & Vidrios</h6>
+            <p class="text-muted small mb-0">Desde $5.999</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card border-0 shadow-sm text-center p-3 h-100">
+            <i class="bi bi-smartwatch fs-1 text-dark mb-2"></i>
+            <h6 class="fw-bold">Smartwatches</h6>
+            <p class="text-muted small mb-0">Desde $89.999</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- TESTIMONIOS -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-center">Lo que dicen nuestros clientes</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 h-100">
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted">"Excelente atención, el celular llegó en 24 horas y perfectamente embalado. ¡Recomiendo 100%!"</p>
+            <div class="d-flex align-items-center mt-3">
+              <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-2" style="width:40px;height:40px;">M</div>
+              <div><strong>Mariana G.</strong><br><small class="text-muted">Buenos Aires</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 h-100">
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted">"Los precios son los mejores del mercado. Compré el iPhone y quedé re contento con la relación calidad-precio."</p>
+            <div class="d-flex align-items-center mt-3">
+              <div class="bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center me-2" style="width:40px;height:40px;">L</div>
+              <div><strong>Lucas P.</strong><br><small class="text-muted">Córdoba</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 h-100">
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            </div>
+            <p class="text-muted">"Muy buena experiencia. El proceso de compra fue simple y el soporte me respondió al toque."</p>
+            <div class="d-flex align-items-center mt-3">
+              <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-2" style="width:40px;height:40px;">S</div>
+              <div><strong>Sofía R.</strong><br><small class="text-muted">Rosario</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- NEWSLETTER -->
+  <section class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <h3 class="fw-bold mb-2">¿Querés enterarte de las ofertas primero?</h3>
+      <p class="text-secondary mb-4">Suscribite y recibí descuentos exclusivos directo en tu correo.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="email" class="form-control form-control-lg" placeholder="tu@email.com"/>
+            <button class="btn btn-warning btn-lg px-4">Suscribirme</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer class="bg-black text-secondary py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="text-white fw-bold mb-3">📱 PhoneZone</h5>
+          <p class="small">Tu tienda de confianza para celulares y accesorios. Envíos a todo el país.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-secondary fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-secondary fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-secondary fs-5"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="text-secondary fs-5"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-white mb-3">Tienda</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-secondary text-decoration-none">Celulares</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Accesorios</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Ofertas</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Novedades</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-white mb-3">Ayuda</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-secondary text-decoration-none">Cómo comprar</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Envíos</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Devoluciones</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Garantía</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4" id="contact">
+          <h6 class="text-white mb-3">Contacto</h6>
+          <p class="small"><i class="bi bi-whatsapp me-2"></i>+54 11 1234-5678</p>
+          <p class="small"><i class="bi bi-envelope me-2"></i>ventas@phonezone.com.ar</p>
+          <p class="small"><i class="bi bi-clock me-2"></i>Lun–Vie 9:00 a 18:00 hs</p>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4"/>
+      <p class="text-center small mb-0">© 2025 PhoneZone. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 
