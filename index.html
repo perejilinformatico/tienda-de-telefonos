@@ -27,7 +27,7 @@
           <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
         <div class="d-flex gap-2">
-          <button class="btn btn-outline-light btn-sm">
+          <button class="btn btn-outline-light btn-sm" onclick="Shopping_cart()">
             <i class="bi bi-cart3"></i> Carrito
           </button>
         </div>
@@ -344,6 +344,10 @@
       <p class="text-center small mb-0">© 2025 PhoneZone. Todos los derechos reservados.</p>
     </div>
   </footer>
+  <div class="cart__div cart-div" id="car" style="display: none; position: fixed; z-index: 1;">
+      
+  </div>
+  <script src="shopping_cart.js"></script>
   <script src="script.js" defer></script>
   <script>
     function Datos() {

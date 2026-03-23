@@ -1,3 +1,8 @@
 html {
     scroll-behavior: smooth;
 }
+.cart__div {
+    background-color: #000000;
+    width: calc(50% + 50%);
+    height: calc(50% + 50%);
+}
