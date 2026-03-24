@@ -2,8 +2,8 @@ html {
     scroll-behavior: smooth;
 }
 .cart__div {
-    width: 200px;              /* ancho del carrito */
-    height: 300px;     
+    width: 300px;              /* ancho del carrito */
+    height: 400px;     
     max-width: 500px;
     max-height: 400px;    
     min-width: 100px;
@@ -28,7 +28,7 @@ html {
 
 .header__div {
     width: 100%;
-    height: 20%;
+    height: 30%;
     object-fit: cover;
     background-color: rgb(20, 20, 20);
 
@@ -42,17 +42,20 @@ html {
 }
 
 .h3-list {
-    padding: 15px;
+    padding: 25px;
 }
 
 /* Pantallas medianas (tablets) */
 @media (max-width: 1024px) {
+    .header__div {
+        height: 28%;
+    }
     .h3-list {
-       padding: 20px;
+       padding: 22px;
     }
     .cart__div {
-        width: 180px;
-        height: 250px;
+        width: 270px;
+        height: 360px;
         padding: 12px;
     }
 }
@@ -65,24 +68,30 @@ li {
 
 /* Pantallas pequeñas (celulares grandes) */
 @media (max-width: 768px) {
+    .header__div {
+        height: 26%;
+    }
     .cart__div {
-        width: 160px;
-        height: 220px;
+        width: 240px;
+        height: 320px;
         padding: 10px;
     }
     .h3-list {
-       padding: 18px;
+       padding: 20px;
     }
 }
 
 /* Pantallas muy pequeñas (celulares pequeños) */
 @media (max-width: 480px) {
+    .header__div {
+        height: 24%;
+    }
     .h3-list {
-       padding: 15px;
+       padding: 18px;
     }
     .cart__div {
-        width: 140px;
-        height: 200px;
+        width: 200px;
+        height: 280px;
         padding: 8px;
         font-size: 14px; /* reduce texto si hay mucho */
     }
